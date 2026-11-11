@@ -17,7 +17,7 @@ An independent Arabic cultural platform exploring the relationship between write
 
 ## Stack
 
-React 19, TypeScript, Vinext/Vite, Cloudflare Workers, D1 SQLite, Drizzle, and Sites authentication. Fonts are Amiri and IBM Plex Sans Arabic from Google Fonts, with local fallbacks.
+React 19, TypeScript, Vinext/Vite, Cloudflare Workers, D1 SQLite, Drizzle, and Sites authentication. Fonts are self-hosted Noto Naskh Arabic and IBM Plex Sans Arabic with local fallbacks. Light and dark themes follow the supplied visual identity; see docs/brand-design.md for asset prompts and verification.
 
 ## Development
 
@@ -43,7 +43,7 @@ The API check uses an ephemeral SQLite database with a D1-compatible adapter and
 
 ## Hosting
 
-The Sites manifest is in .openai/hosting.json. DB is the durable D1 binding. Publish the built Worker through Sites, preserving its current audience. The initial deployment is owner-private. No secrets belong in Git.
+The Sites manifest is in .openai/hosting.json. DB is the durable D1 binding. Publish the built Worker through Sites, preserving its current audience. The current deployment is public by the owner request. No secrets belong in Git.
 
 ## Scope
 
